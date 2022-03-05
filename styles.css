@@ -1,0 +1,222 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: var(--bg-color);
+    color: floralwhite;
+}
+
+:root{
+    --font-top-rect: 'Crimson Pro', serif;
+    --font-heading : 'Lora', serif;
+    --font-paragraphs: 'Montserrat', sans-serif;
+    --bg-color: #000000;
+    --text-xl: 3em;
+    --text-lg: 1.5em;
+    --text-md: 1.125em;
+    --text-sm: 0.875em;
+    --text-xs: 0.75em;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.overlay{
+    display: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3em;
+    margin-bottom: 8em;
+    padding: 0.5em 0;
+}
+
+nav{
+    width: 500px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-family: var(--font-paragraphs);
+    font-weight: 500;
+}
+
+.top-rect{
+    font-family: var(--font-top-rect);
+    font-weight: 200;
+    border: 1px solid white;
+    padding: 0.5em 1em;
+    font-size: var(--text-sm);
+}
+
+main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-main{
+    width: 30%;
+}
+.info-main h1{
+    font-family: var(--font-heading);
+    font-weight: 500;
+    font-size: var(--text-xl);
+    padding-bottom: 1em;
+}
+
+.info-main p{
+    font-family: var(--font-paragraphs);
+    font-weight: 400;
+    font-size: var(--text-lg);
+    padding-bottom: 3em;
+}
+
+.info-main span{
+    font-family: var(--font-paragraphs);
+    font-weight: 700;
+    font-size: var(--text-md);
+}
+
+.image-main{
+    width: 60%;
+}
+
+.home-img img{
+    width: 100%;
+}
+
+.card{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    position: relative;
+    left: 65%;
+    bottom: 82px;
+}
+
+.card img{
+    border-radius: 50%;
+    width: 60px;
+}
+
+.name, .role{
+    font-family: var(--font-paragraphs);
+    font-weight: 500;
+}
+
+.name{
+    font-size: var(--text-sm);
+}
+
+.role{
+    font-size: var(--text-xs);
+    color:  #828282;
+}
+
+.caption{
+    font-family: var(--font-heading);
+    font-size: var(--text-lg);
+    font-weight: 700;
+}
+
+.card-top{
+    display: flex;
+    align-items: center;
+}
+
+footer{
+    text-align: center;
+    padding-bottom: 1em;
+    font-family: var(--font-paragraphs);
+    font-weight: 500;
+    font-size: var(--text-sm);
+}
+
+footer p{
+    color: #A9A9A9;
+}
+
+@media only screen and (max-width: 400px) {
+    
+    .overlay-menu{
+        display: block;
+    }
+    main{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .info-main{
+        width: 100%;
+    }
+    .image-main{
+        width: 100%;
+    }
+    .info-main h1{
+        font-family: var(--font-heading);
+        font-weight: 500;
+        font-size: 2.25em;
+        padding-bottom: 1em;
+    }
+    
+    .info-main p{
+        font-family: var(--font-paragraphs);
+        font-weight: 400;
+        font-size: 1.125em;
+        padding-bottom: 3em;
+    }
+    
+    .info-main span{
+        font-family: var(--font-paragraphs);
+        font-weight: 700;
+        font-size: 0.875em;
+    }
+
+    .card{
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        position: relative;
+        left: 5%;
+        bottom: 50px;
+    }
+
+    .caption{
+        font-family: var(--font-heading);
+        font-size: 1.125em;
+        font-weight: 700;
+    }
+
+    .name{
+        font-size: 0.75em;
+    }
+    
+    .role{
+        font-size: 0.625em;
+        color:  #828282;
+    }
+
+    .card img{
+        border-radius: 50%;
+        width: 50px;
+    }
+    
+    footer p{
+        font-size: 0.875em;
+    }
+}
