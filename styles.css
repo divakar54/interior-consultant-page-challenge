@@ -20,7 +20,7 @@
     --text-sm: 0.875em;
     --text-xs: 0.75em;
 }
-
+.fa { font-family: 'FontAwesome' !important; }
 .container{
     width: 100%;
     padding: 0 2em;
@@ -155,12 +155,28 @@ footer p{
 @media only screen and (max-width: 768px) {
     
     header .navigation{
-        display: none;
+        position: absolute;
+        visibility: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
     }
-    
+    header .navigation ul{
+        display: flex;
+       
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header .navigation ul li{
+        padding-top: 3em;
+    }
     header #hamburger{
         display: block;
     }
+
     .overlay-menu{
         display: block;
     }
