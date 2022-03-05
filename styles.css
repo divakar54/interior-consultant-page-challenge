@@ -22,8 +22,8 @@
 }
 
 .container{
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
+    padding: 0 2em;
 }
 
 .overlay{
@@ -36,6 +36,10 @@ header{
     margin-top: 3em;
     margin-bottom: 8em;
     padding: 0.5em 0;
+}
+
+header #hamburger{
+    display: none;
 }
 
 nav{
@@ -148,8 +152,15 @@ footer p{
     color: #A9A9A9;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 768px) {
     
+    header .navigation{
+        display: none;
+    }
+    
+    header #hamburger{
+        display: block;
+    }
     .overlay-menu{
         display: block;
     }
