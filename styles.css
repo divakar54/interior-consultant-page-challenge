@@ -38,7 +38,7 @@ header #hamburger{
     display: none;
 }
 
-nav{
+ul{
     width: 500px;
 }
 
@@ -149,25 +149,29 @@ footer p{
     color: #A9A9A9;
 }
 
-@media screen and (max-width: 768px) {
-   
-    .navigation{
-        position: fixed;
-        width: 100%;
+@media only screen and (max-width: 768px) {
+    
+    
+    header ul{
+        position: absolute;
+        visibility: visible;
+        display: flex;
+        flex-direction: column ;
+        justify-content: center;
+        align-items: center;
         height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        width: 100%;
     }
-    .hide{
-        display: none;
+    
+    header ul li{
+        padding-top: 3em;
     }
-    .menu{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    header #hamburger{
+        display: block;
+    }
+
+    .overlay-menu{
+        display: block;
     }
     main{
         width: 100%;
