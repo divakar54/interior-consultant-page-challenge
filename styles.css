@@ -26,10 +26,6 @@
     padding: 0 2em;
 }
 
-.overlay{
-    display: none;
-}
-
 header{
     display: flex;
     justify-content: space-between;
@@ -148,37 +144,30 @@ footer{
     font-size: var(--text-sm);
 }
 
+
 footer p{
     color: #A9A9A9;
 }
 
-@media only screen and (max-width: 768px) {
-    
-    header .navigation{
-        position: absolute;
-        visibility: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
+@media screen and (max-width: 768px) {
+   
+    .navigation{
+        position: fixed;
         width: 100%;
-    }
-    header .navigation ul{
+        height: 100vh;
         display: flex;
-       
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    header .navigation ul li{
-        padding-top: 3em;
+    .hide{
+        display: none;
     }
-    header #hamburger{
-        display: block;
-    }
-
-    .overlay-menu{
-        display: block;
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     main{
         width: 100%;
