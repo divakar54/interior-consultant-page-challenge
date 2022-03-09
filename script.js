@@ -1,5 +1,6 @@
-const hamburger = document.querySelector('#hamburger');
-const nav = document.querySelector('.menu');
-// hamburger.addEventListener('click', () => {
-//     nav.style.display = 'block';
-// })
+const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+})
